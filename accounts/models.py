@@ -42,7 +42,7 @@ class User(AbstractUser):
         return self.last_login.timestamp() if self.last_login else ''
 
     def __str__(self):
-        return '{} {]'.format(self.first_name, self.last_name)
+        return '{} {}'.format(self.first_name, self.last_name)
 
 
 class PersistentId(models.Model):
